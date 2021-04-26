@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            Weather-App Service <i class="fas fa-cloud-sun-rain"></i>
+        </header>
+        <div>
+            <ul>
+                <li>
+                    <a href="/">Home</a></li>
+                <li>
+                    <a href="/about">About</a></li>
+                <li>
+                    <a href="/help">Help</a></li>
+            </ul>
+        </div>
+
+        <%- body%>
+
+            <!-- <footer>
+                Created by
+                <%= name %>
+            </footer> -->
+            <footer>
+                <details>
+                    <summary>Copyright | 2021.</summary>
+                    <p> - by @Abhijeet. All Rights Reserved.</p>
+                </details>
+            </footer>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
