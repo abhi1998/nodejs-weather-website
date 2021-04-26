@@ -100,3 +100,10 @@ div ul li a {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
