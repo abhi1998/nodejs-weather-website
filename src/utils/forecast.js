@@ -29,7 +29,7 @@ const forecast = (address, callback) => {
         } else if (body.weather === undefined) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, `${(body.weather[0].description)}, It's currently ${Math.round((body.main.temp)-273.15)}°C in ${body.name}`)
+            callback(undefined, `${(body.weather[0].description)}, Humidity : ${body.main.humidity} and It's currently ${Math.round((body.main.temp)-273.15)}°C in ${body.name}`)
         }
     })
 }
