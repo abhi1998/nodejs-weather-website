@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3000
 
 const expressLayouts = require('express-ejs-layouts')
 const geocode = require('./utils/geocode')
@@ -102,6 +103,6 @@ app.get('*', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log('Server started successfully.')
+app.listen(port, () => {
+    console.log(`Server started successfully on ${port}`)
 })
